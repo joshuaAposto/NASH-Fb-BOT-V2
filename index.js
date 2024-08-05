@@ -18,6 +18,10 @@ global.NashBoT = new Object({
   onlineUsers: new Map(),
 });
 
+global.NashBot = new Object({
+  ENDPOINT: "https://nash-rest-api-production.up.railway.app/",
+});
+
 async function loadCommands() {
   const commandPath = path.join(__dirname, "commands");
   const commandFiles = await fs

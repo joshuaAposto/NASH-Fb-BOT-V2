@@ -13,7 +13,7 @@ module.exports = {
       }
 
       const prompt = encodeURIComponent(args.join(' '));
-      const apiUrl = `https://nash-rest-api.vercel.app/gemini?prompt=${prompt}`;
+      const apiUrl = `${global.NashBot.ENDPOINT}gemini?prompt=${prompt}`;
 
       api.sendMessage('🔮 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁, 𝗚𝗲𝗺𝗶𝗻𝗶 𝗶𝘀 𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗶𝗻𝗴...', event.threadID);
 

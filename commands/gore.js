@@ -14,7 +14,7 @@ module.exports = {
     try {
       api.sendMessage('🎥 Fetching random gore content...', event.threadID);
 
-      const apiUrl = 'https://nash-rest-api.vercel.app/gore';
+      const apiUrl = `${global.NashBot.ENDPOINT}gore`;
 
       const response = await axios.get(apiUrl);
       const data = response.data;

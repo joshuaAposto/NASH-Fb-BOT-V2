@@ -9,7 +9,7 @@ module.exports = {
   nashPrefix: true,
   execute: async (api, event, args, prefix) => {
     try {
-      const response = await axios.get('https://nash-api-end.onrender.com/cocktail');
+      const response = await axios.get(`${global.NashBot.ENDPOINT}cocktail`);
       const drink = response.data.drinks[0];
 
       if (drink) {

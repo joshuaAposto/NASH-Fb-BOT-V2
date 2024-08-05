@@ -25,7 +25,7 @@ module.exports = {
       }
 
       const title = encodeURIComponent(args.join(' '));
-      const apiUrl = `https://nash-rest-api.vercel.app/manga-search?title=${title}`;
+      const apiUrl = `${global.NashBot.ENDPOINT}manga-search?title=${title}`;
 
       api.sendMessage('🔍 Searching for manga...', event.threadID);
 

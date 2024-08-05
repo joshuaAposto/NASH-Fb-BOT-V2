@@ -17,7 +17,7 @@ module.exports = {
       }
 
       const searchQuery = encodeURIComponent(args.join(' '));
-      const apiUrl = `https://nash-rest-api.vercel.app/waifu?search=${searchQuery}`;
+      const apiUrl = `${global.NashBot.ENDPOINT}waifu?search=${searchQuery}`;
 
       api.sendMessage('🖼️ Searching for waifu...', event.threadID);
 

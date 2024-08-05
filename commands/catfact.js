@@ -7,7 +7,7 @@ module.exports = {
   nashPrefix: true,
   execute: async (api, event, args, prefix) => {
     try {
-      const response = await axios.get('https://nash-api-end.onrender.com/cat-fact');
+      const response = await axios.get(`${global.NashBot.ENDPOINT}cat-fact`);
       const catFact = response.data.data[0];
 
       if (catFact) {

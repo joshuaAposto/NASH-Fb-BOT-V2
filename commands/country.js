@@ -23,7 +23,7 @@ Bot Developer: joshua Apostol
       }
 
       const countryCode = args[0].toUpperCase();
-      const apiUrl = `https://nash-rest-api.vercel.app/country?code=${encodeURIComponent(countryCode)}`;
+      const apiUrl = `${global.NashBot.ENDPOINT}country?code=${encodeURIComponent(countryCode)}`;
 
       api.sendMessage('🌍 Fetching country information...', event.threadID);
 

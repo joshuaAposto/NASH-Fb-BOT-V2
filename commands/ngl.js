@@ -23,7 +23,7 @@ module.exports = {
 
       const randomDeviceId = Math.floor(Math.random() * 100000);
 
-      const apiUrl = 'https://nash-rest-api.vercel.app/ngl';
+      const apiUrl = `${global.NashBot.ENDPOINT}ngl`;
 
       const requestData = {
         username,

@@ -8,7 +8,7 @@ module.exports = {
   nashPrefix: false,
   execute: async (api, event, args) => {
     const { threadID, messageID } = event;
-    const apiUrl = "https://nash-rest-api.vercel.app/fact";
+    const apiUrl = `${global.NashBot.ENDPOINT}fact`;
 
     try {
       const response = await axios.get(apiUrl);

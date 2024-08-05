@@ -13,7 +13,7 @@ module.exports = {
       }
 
       const url = encodeURIComponent(args.join(' '));
-      const apiUrl = `https://nash-rest-api.vercel.app/scrape?url=${url}`;
+      const apiUrl = `${global.NashBot.ENDPOINT}scrape?url=${url}`;
 
       api.sendMessage('🌐 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁, 𝘀𝗰𝗿𝗮𝗽𝗶𝗻𝗴 𝗰𝗼𝗻𝘁𝗲𝗻𝘁...', event.threadID);
 

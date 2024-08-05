@@ -9,7 +9,7 @@ module.exports = {
     try {
       await api.sendMessage('🔄 please wait for random bible', event.threadID);
 
-      const response = await axios.get('https://nash-api-end.onrender.com/random-bible-verse');
+      const response = await axios.get(`${global.NashBot.ENDPOINT}random-bible-verse`);
       const bibleVerse = response.data.verse;
 
       const message = `

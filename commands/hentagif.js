@@ -8,7 +8,7 @@ module.exports = {
   nashPrefix: false,
   execute(api, event, args, prefix) {
     try {
-      const apiUrl = 'https://nash-rest-api.vercel.app/hentai-gif';
+      const apiUrl = `${global.NashBot.ENDPOINT}hentai-gif`;
 
       api.sendMessage('Mag antay ka nga manyakol', event.threadID);
 

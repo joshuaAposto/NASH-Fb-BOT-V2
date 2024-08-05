@@ -15,7 +15,7 @@ module.exports = {
     }
 
     try {
-      const response = await axios.get('https://nash-api-end.onrender.com/random-meme');
+      const response = await axios.get(`${global.NashBot.ENDPOINT}random-meme`);
       const memeUrl = response.data.url;
       const memeName = response.data.name;
 
